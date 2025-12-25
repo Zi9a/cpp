@@ -1,0 +1,22 @@
+# Ignore compiled binaries
+*.out
+*.exe
+*.o
+*.obj
+
+# Ignore build directories
+/build/
+/bin/
+/Debug/
+/Release/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files (optional, common ones)
+*.swp
+*.swo
+*.idea/
+*.vscode/
+
