@@ -20,3 +20,72 @@ Thumbs.db
 *.idea/
 *.vscode/
 
+# =====================
+# C++ build artifacts
+# =====================
+run
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dll
+*.dylib
+
+# =====================
+# Executables
+# =====================
+main
+a.out
+
+# =====================
+# Debug / symbol files
+# =====================
+*.dSYM/
+*.pdb
+*.idb
+
+# =====================
+# Build directories
+# =====================
+build/
+bin/
+dist/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# =====================
+# macOS
+# =====================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =====================
+# Editor / IDE files
+# =====================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# =====================
+# Logs
+# =====================
+*.log
+
+# =====================
+# Temporary files
+# =====================
+tmp/
+temp/
+
+# =====================
+# Optional: Ignore local config
+# =====================
+.gitconfig

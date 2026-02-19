@@ -1,3 +1,4 @@
+#include <bitstring.h>
 #include <iostream>
 #include <iterator>
 #include <string_view>
