@@ -1,3 +1,4 @@
+#include <bitstring.h>
 #include <iostream>
 #include <iterator>
 #include <string_view>
@@ -12,7 +13,8 @@ auto appendElementsToVector(int size) {
 }
 
 void fizzBuzz(std::vector<int> integerList) {
-  std::vector<std::string_view> buzzWords{"fizz", "buzz", "pop", "bang", "jaz",  "pow",  "boom"};
+  std::vector<std::string_view> buzzWords{"fizz", "buzz", "pop", "bang",
+                                          "jaz",  "pow",  "boom"};
   std::vector<int> primeList{3, 5, 7, 11, 13, 17, 19};
 
   for (std::size_t i{0}; i < std::size(integerList); ++i) {
