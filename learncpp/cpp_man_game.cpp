@@ -46,19 +46,26 @@ auto get_guessed_word(std::string_view word_to_be_guessed) {
   }
 
   std::cout << "guess the string: " << guessed_string << '\n';
-  std::cout << "string: ";
-  std::string input_word{};
-  std::cin >> input_word;
+  std::cout << "enter your next letter: ";
+  char input_letter{};
+  std::cin >> input_letter;
   clearFailedExtraction();
+  ignoreLine();
 
   for (int i{}; i < guessed_string.size(); ++i) {
-    if (input_word[i] == word_to_be_guessed[i]) {
+    if (input_letter == word_to_be_guessed[i]) {
       guessed_string[i] = word_to_be_guessed[i];
     }
   }
 
-  std::cout << guessed_string << '\n';
+  for (int i{}; i < guessed_string.size(); ++i) {
+    if (input_letter == guessed_string[i]) {
+      std::cout << "The letter " << input_letter << " is in the word\n";
+      break;
+    }
+  }
 
+  std::cout << '\n';
   return guessed_string;
 }
 
@@ -69,17 +76,11 @@ int main() {
 
   std::string random_word{WordList::get_random_word()};
 
-  int attempt{0};
   do {
-    auto current_guessed_word{get_guessed_word(random_word)};
-
-    if (current_guessed_word == random_word) {
+    if (get_guessed_word(random_word) == random_word) {
       break;
-    } else {
-      std::cout << "keep trying!\n";
     }
-
-  } while (attempt <= 3);
+  } while (true);
 
   std::cout << "\n The word is : ";
   std::cout << random_word << '\n';
