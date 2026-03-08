@@ -34,7 +34,17 @@ bool clearFailedExtraction() {
   return false;
 }
 
-auto get_guessed_word(std::string_view word_to_be_guessed) {
+bool is_input_letter_in_the_string(std::string guessed_string,
+                                   char input_letter) {
+  for (int i{}; i < guessed_string.size(); ++i) {
+    if (input_letter == guessed_string[i]) {
+      return true;
+    }
+  }
+  return false;
+}
+
+std::string get_guessed_word(std::string_view word_to_be_guessed) {
   static std::string guessed_string{word_to_be_guessed};
   static bool first_guess{true};
 
@@ -58,11 +68,12 @@ auto get_guessed_word(std::string_view word_to_be_guessed) {
     }
   }
 
-  for (int i{}; i < guessed_string.size(); ++i) {
-    if (input_letter == guessed_string[i]) {
-      std::cout << "The letter " << input_letter << " is in the word\n";
-      break;
-    }
+  std::cout << "\033[2J\033[1;1H"; // clear screen
+
+  if (is_input_letter_in_the_string(guessed_string, input_letter)) {
+    std::cout << "the letter " << input_letter << " is in the word" << '\n';
+  } else {
+    std::cout << "the letter " << input_letter << " is NOT in the word" << '\n';
   }
 
   std::cout << '\n';
