@@ -39,7 +39,7 @@ std::string_view get_item_name(int item) {
 
 int main() {
   int health_potion_number = 1;
-  int torch_number = 5;
+  int torch_number = 8;
   int arrow_number = 10;
 
   std::vector number{health_potion_number, torch_number, arrow_number};
