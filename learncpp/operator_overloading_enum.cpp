@@ -70,33 +70,5 @@ int main() {
 
   printAnimalInfo(animal);
 
-  // std::string name{};
-  // std::cout << "enter the name of animal: ";
-  // std::cin >> name;
-  //
-  // bool found{false};
-  // for (auto &nameOfAnimal : Animal::animals) {
-  //   if (name == nameOfAnimal.name) {
-  //     std::cout << nameOfAnimal.name << " has " << nameOfAnimal.numberOfLegs
-  //               << " legs and says " << nameOfAnimal.sound << '\n';
-  //     found = true;
-  //   }
-  // }
-  //
-  // if (!found) {
-  //   std::cout << name << " ain't an animal i've ever heard of " << '\n';
-  // }
-  //
-  // std::cout << '\n';
-  // std::cout << "here's a list of other animals: " << '\n';
-  // for (auto &nameOfAnimal : Animal::animals) {
-  //   if (name == nameOfAnimal.name) {
-  //     continue;
-  //   }
-  //   std::cout << " -" << nameOfAnimal.name << " has "
-  //             << nameOfAnimal.numberOfLegs << " legs and says "
-  //             << nameOfAnimal.sound << '\n';
-  // }
-  //
-  // return 0;
+  return 0;
 }

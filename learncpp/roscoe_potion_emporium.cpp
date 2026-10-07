@@ -1,7 +1,6 @@
 // Roscoe’s potion emporium
 
 #include <array>
-#include <cstdio>
 #include <cstdlib>
 #include <ios>
 #include <iostream>

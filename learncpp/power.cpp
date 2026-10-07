@@ -21,7 +21,6 @@ template <typename T> double pow(T base, T expo) {
 
 int main() {
 
-  std::cout << pow('a', 1) << '\n';
-
+  std::cout << pow(69, 1) << '\n';
   return 0;
 }

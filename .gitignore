@@ -89,3 +89,9 @@ temp/
 # Optional: Ignore local config
 # =====================
 .gitconfig
+.clangd
+
+# Temporary files
+./learncpp/tmp.cpp
+./learncpp/run.s
+

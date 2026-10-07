@@ -1,10 +1,8 @@
 #ifndef RANDOM_MT_H
 #define RANDOM_MT_H
 
-#include <algorithm>
 #include <chrono>
 #include <random>
-#include <vector>
 
 // This header-only Random namespace implements a self-seeding Mersenne Twister.
 // Requires C++17 or newer.

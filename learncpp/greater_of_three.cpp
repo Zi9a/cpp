@@ -12,9 +12,9 @@ int findGreater(int a, int b, int c) {
 }
 
 int main() {
-  int a{20};
-  int b{20};
-  int c{30};
+  int a{35};
+  int b{33};
+  int c{5};
 
   std::cout << "Greater: " << findGreater(a, b, c) << '\n';
 
